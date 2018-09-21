@@ -1,0 +1,35 @@
+<html>
+    <head>
+        {{template "header.html" .}}
+    </head>
+    <body>
+        <div class="container pt-5">       
+            <div class="col-md-5 col-md-offset-5 mx-auto">
+                <div class="card" style="width:500px">
+                    <div class="card-header">
+                        登入
+                    </div>
+                    <div class="card-body">
+                        <form action="{{.actionUrl}}" method="post">
+                            <div class="form-group row">
+                                <label for="inputEmail" class="col-sm-3 col-form-label">Email</label>
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email">
+                                </div>
+                            </div>       
+                            <div class="form-group row">
+                                <label for="inputPassword" class="col-sm-3 col-form-label">Passowrd</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="inputPassword" name="password" placeholder="Passowrd">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign In</button>
+                            <button type="reset" class="btn btn-danger">Reset</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </body>
+    {{template "script.html"}}
+</html>
