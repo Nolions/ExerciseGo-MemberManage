@@ -1,5 +1,5 @@
 # ExerciseGo-MemberManage
 
-# Install 
-    dep ensure
+## Install package by edp
 
+    dep ensure
